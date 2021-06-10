@@ -17,4 +17,4 @@ Route::get('/', 'PageController@index')->name('home');
 
 
 //VIAGGI
-Route::get('/viaggi', 'ViaggioController@index')->name('viaggi');
+Route::get('/travels', 'TravelController@index')->name('travels');

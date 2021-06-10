@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\ViaggioModel;
+use App\Travel;
 
-class ViaggioController extends Controller
+class TravelController extends Controller
 {
+    //
+
     //Viaggi
     public function index() {
-        return view('viaggi');
+        return view('travels');
     }
 }
