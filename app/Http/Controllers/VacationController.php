@@ -10,7 +10,16 @@ class VacationController extends Controller
     
     //Home
     public function index() {
-        return view('vacations');
+
+        //get all data
+        $vacations= Vacation::all();
+        //dump($vacations);
+
+        //impaginazione
+        $vacations = Vacation::simplePaginate(5);
+
+
+        return view('vacations', compact('vacations'));
     }
 
     

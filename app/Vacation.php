@@ -6,6 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Vacation extends Model
 {
-    //
-    protected $table = 'vacations';
+    
+    //protected $table = 'vacations';
 }
