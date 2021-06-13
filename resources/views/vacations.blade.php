@@ -1,11 +1,11 @@
 @extends('layouts.main')
 
 @section('content')
-    <h1>Pacchetti Viaggio</h1>
+    <h1 class="ms-5">Pacchetti Viaggio</h1>
 
     <!--Tutti le vacations da DB-->
     @foreach ($vacations as $vacation)
-    <article>
+    <article class="ms-5">
         <h2>Città: {{ $vacation->city }}</h2>
         <div>Sistemazione: {{ $vacation->accomodation }}</div>
         <div>Numero di persone: {{ $vacation->people }}</div>
@@ -23,7 +23,7 @@
         
     @endforeach
 
-    <section>
+    <section class="nav ms-5 mt-3">
         {{ $vacations->links() }}
     </section>
 
